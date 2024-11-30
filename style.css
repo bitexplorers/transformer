@@ -64,13 +64,13 @@ a:link,
 a:visited,
 a:active {
   text-decoration: none; 
-  color: rgb(255, 208, 0);
+  color: rgb(141, 196, 101);
 }
 
 a:hover
 {
   text-decoration: none; 
-  color: rgb(255, 255, 255);
+  color: rgb(116, 194, 60);
 }
 
 ul
