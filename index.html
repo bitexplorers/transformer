@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -458,7 +458,30 @@
 .img5 {width: 9%;}
 
 
+	
 
+@media screen and (max-width: 1400px) {
+    .mce-container { flex-direction: column !important; }
+    .mce-container > div {
+        flex: 1 1 auto !important;
+        width: 100% !important;
+    }
+    
+    .mce-img1 { order: 1; }
+    .mce-text1 { order: 2; }
+    .mce-video1 { order: 3; }
+    .mce-text2 { order: 4; }
+}
+
+.full-viewport-width {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    overflow: hidden;
+}
 
 
 
@@ -958,7 +981,89 @@ justify-content: center;
 	<div style="width: 100%; height:5em;"></div>
 
 
-	<div>
+	<!--/// TUTAJ ZMIANY OD ADRIANA START + na samej górze dodałem CSS @media odpowiadający za responsywność sekcji -->
+	
+<div class="apla">
+		<div class="hig2" style="background-color: #c3fe9aff; color: black; font-weight: 500;"> &nbsp; Module Control Electronics &nbsp; </div>
+	</div>
+
+	<div class="mce-container" style="display: flex; flex-wrap: wrap; gap: 2vw; padding-top: 0.3vw;">
+		
+		<div class="mce-text1 txtfield" style="flex: 1 0 calc(50% - 2vw); min-width: 300px; box-sizing: border-box;">
+			<div class="txt">
+				A single Transformer controller serves as the universal hardware base for all modules, which differ only in their software. Ultimately, the modules will be integrated into a cohesive system that communicates internally, triggering connected devices in a sequence programmed by the central 'brain'. Individual modules receive their tasks from the brain and execute local sub-sequences. Upon completion, they send a status message back to the brain, ensuring all tasks are perfectly synchronized.
+				<br><br>
+				The entire system operates via the MIDI-USB protocol. This allows any module to be hot-swapped and tested independently using any device that supports the MIDI standard. Furthermore, in the event of a hardware failure,
+				 a module can be temporarily replaced by a laptop to simulate its function until the original is repaired. This fail-safe design guarantees the continuous operation of the Transformer installation in the gallery, eliminating the need for downtime during repairs or, for example, during a temporary loss of live stock exchange data.
+			</div>
+		</div>
+		<div class="mce-img1" style="flex: 1 0 calc(50% - 2vw); min-width: 300px; display: flex; justify-content: center; align-items: flex-start; box-sizing: border-box;">
+			<img src="img/module_brain.jpg" alt="Brain Module" style="width: 100%; height: auto; float: none; border-radius: 0.6vw;">
+		</div>
+
+		<div class="mce-video1" style="flex: 1 0 calc(50% - 2vw); min-width: 300px; display: flex; justify-content: center; align-items: flex-start; box-sizing: border-box;">
+			<iframe width="100%" style="aspect-ratio: 16/9; border-radius: 0.6vw;" src="https://www.youtube.com/embed/aJbLO66Zq9s" title="Komunikacja test" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		</div>
+
+		<div class="mce-text2 txtfield" style="flex: 1 0 calc(50% - 2vw); min-width: 300px; box-sizing: border-box;">
+			<div class="txt">
+				Communication test between two modules.<br>
+				<em>The system uses the MIDI-USB protocol to synchronize tasks between the main "brain" and subordinate modules, ensuring reliable, continuous operation and the ability to hot-swap components of the installation.</em>
+			</div>
+		</div>
+	</div>
+
+
+	<div style="width: 100%; height: 5vw;"></div>
+
+	<div class="apla">
+		<div class="hig2"> &nbsp; 9th Silesian Science Festival &nbsp; </div>
+	</div>
+
+	<div style="display: flex; flex-wrap: wrap; gap: 2vw; padding-top: 0.3vw;">
+		
+		<div class="txtfield" style="flex: 1 0 calc(50% - 2vw); min-width: 300px; align-self: flex-start; box-sizing: border-box;">
+			<div class="txt">
+				Our Bit Explorers team was pleased to present at the 9th Silesian Science Festival. 
+				It was a perfect opportunity to introduce visitors to the concepts of the Transformer project and demonstrate how, at the intersection of art, 
+				technology, and hard stock exchange data, real pro-ecological changes can be generated. 
+				<br><br>
+				At our stand, we discussed the mechanisms of the global economy, presented early prototypes, and tested interactions with the public. 
+				The immense interest in the installation confirmed our belief that complex financial processes become much more understandable when given a tangible, mechanical-artistic form. 
+				We thank everyone for the inspiring conversations!
+			</div>
+		</div>
+		
+		<div style="flex: 1 0 calc(50% - 2vw); min-width: 300px; display: flex; flex-direction: column; gap: 0.3vw; box-sizing: border-box; position: relative;">
+			
+			<div class="grid2" style="padding-top: 0;">
+				<img src="img/SFN1.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+				<img src="img/SFN2.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+				<img src="img/SFN3.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+				<img src="img/SFN4.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+			</div>
+			
+			<div style="position: absolute; bottom: -10vw; left: 50%; transform: translateX(-50%); width: 35vw; height: 18vw; background: radial-gradient(circle, #c3fe9aff 0%, #c3fe9aff00 80%); border-radius: 50%; z-index: -1;"></div> 
+			
+		</div>
+	</div>
+	
+	<div style="width: 100%; height: 5vw;"></div> <div class="apla">
+		<div class="hig2"> &nbsp; Demo clip &nbsp; </div>
+	</div>
+
+	<div style="display: flex; justify-content: center; width: 100%;">
+		
+		<div style="width: 100%;">
+			<iframe width="100%" style="aspect-ratio: 16/9; display: block; border-radius: 0.6vw;" src="https://www.youtube.com/embed/XVZX3E4l0fs?start=3" title="Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		</div>
+		
+	</div>
+
+	<!-- TUTAJ ZMIANY OD ADRIANA KONIEC -->
+	
+	<div style="width: 100%; height: 5vw;"></div>
+
 		<img src="svg/outro01.png" alt="Long Bar SVG" style="width: 100%; height: auto; float: none; display: block;
 
 height: inherit;
@@ -969,7 +1074,7 @@ opacity: 100%;
 ">
 
 
-		<div style="width: 100%; height: 2vw;">
+		<div style="width: 100%; height: 1vw;">
 
 		</div>
 
